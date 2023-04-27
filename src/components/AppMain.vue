@@ -33,6 +33,48 @@
                 </div>
             </div>
         </section>
+        <section id="facilities" class="text-white text-center">
+            <div class="d-flex flex-column justify-content-center tour align-items-center pt-5">
+                <img class="mt-3" src="../images/icon-7.png" alt="">
+                <h1 class="text-uppercase py-4">tour our facilities</h1>
+                <hr class="rule-2">
+                <p class="paragraph pt-4">Sed ut perspicatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aprim, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
+                <img class="mt-4 play pb-5" src="../images/play-icon.png" alt="">
+            </div>
+            <div class="sash d-flex">
+                <div class="sash-1 d-flex flex-column align-items-center justify-content-center">
+                    <h4>Emergency Care</h4>
+                    <img class="pt-3" src="../images/wave-divider.png" alt="">
+                    <p class="p-3">Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+                    <button class="text-uppercase">Learn more</button>
+                </div>
+                <div class="sash-2 d-flex flex-column align-items-center justify-content-center">
+                    <h4>Emergency Care</h4>
+                    <img class="pt-3" src="../images/wave-divider.png" alt="">
+                    <p class="p-3">Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+                    <button class="text-uppercase">Learn more</button>
+                </div>
+                <div class="sash-3 d-flex flex-column align-items-center justify-content-center">
+                    <h4>Emergency Care</h4>
+                    <img class="pt-3" src="../images/wave-divider.png" alt="">
+                    <p class="p-3">Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+                    <button class="text-uppercase">Learn more</button>
+                </div>
+            </div>
+            <div id="appointment" class="text-white text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="pb-4">Make an Appointment</h1>
+                <hr class="rule-2">
+                <p class="paragraph pt-4">Sed ut perspicatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aprim, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
+                <div class="d-flex flex-wrap justify-content-between align-items-center paragraph mt-4">
+                    <input  type="text" placeholder="Name*">
+                    <input  type="email" placeholder="E-mail*">
+                    <input class="mt-3" type="number" placeholder="Phone number">
+                    <input class="mt-3" type="number" placeholder="Appointment Date*">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="How can we help?*"></textarea>
+                    <button class="appointment text-uppercase text-white fs-5">Make an appointment</button>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -73,11 +115,98 @@ import AppSingleCard from './AppSingleCard.vue';
     .rule{
         color: grey;
         width: 22%;
-        height: 2px;
+        height: 3px;
         background-color: grey;
+    }
+
+    .rule-2{
+        color: white;
+        width: 22%;
+        height: 2px;
+        background-color: white;
     }
 
     .icon{
         width: 80px;
+    }
+
+    .tour{
+        width: 100%;
+        height: 80vhvh;
+        background-image: url(../images/paralax-bg-tour-facilities.jpg);
+        background-size: cover;
+        background-position-y: -180px;
+    }
+
+    .play{
+        cursor: pointer;
+    }
+
+    .sash{
+        width: 100%;
+        height: 300px;
+
+        .sash-1{
+            background-color: #3aafbf;
+            width: calc(100% / 3);
+            height: 100%;
+        }
+
+        .sash-2{
+            background-color: #3597c3;
+            width: calc(100% / 3);
+            height: 100%;
+        }
+
+        .sash-3{
+            background-color: #327ec7;
+            width: calc(100% / 3);
+            height: 100%;
+        }
+
+        button{
+            text-decoration: none;
+            background-color: transparent;
+            border: 3px solid white;
+            color: white;
+            padding: 6px 20px;
+        }
+    }
+
+    #appointment{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/make-an-appointment.jpg);
+        background-size: cover;
+    }
+
+    input{
+        width: 48%;
+        height: 30px;
+        padding: 20px;
+        text-decoration: none;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+
+    }
+
+    textarea{
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+        text-decoration: none;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .appointment{
+        width: 100%;
+        height: 50px;
+        text-decoration: none;
+        background-color:#3aafbf;
+        margin-top: 20px;
+        border: none;
     }
 </style>

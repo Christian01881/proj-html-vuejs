@@ -6,7 +6,8 @@
             </div>
             <div>
                 <ul class="d-flex align-items-center justify-content-between text-white text-uppercase">
-                    <li v-for="link in headerLinks" class="px-3">{{ link }}</li>
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index < 4" class="px-3">{{ link }}</li>
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index > 3" class="px-3"><a class="none" href="#appointment">{{ link }}</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,6 +58,7 @@ import { headerLinks } from '../data/store.js'
             background-color:#3aafbf;
             padding: 10px 12px;
             border-radius: 2px;
+            cursor: pointer;
         }
 
         .container{
@@ -95,5 +97,10 @@ import { headerLinks } from '../data/store.js'
             text-decoration: none;
             color: white;
         }
+    }
+
+    .none{
+        text-decoration: none;
+        color: white;
     }
 </style>
