@@ -74,6 +74,9 @@
                     <button class="appointment text-uppercase text-white fs-5">Make an appointment</button>
                 </div>
             </div>
+            <div>
+                <AppSlider />
+            </div>
         </section>
     </div>
 </template>
@@ -84,6 +87,7 @@ import { doctorSection } from '../data/store';
 import { serviceSection } from '../data/store';
 import AppDoctorCard from './AppDoctorCard.vue';
 import AppSingleCard from './AppSingleCard.vue';
+import AppSlider from './AppSlider.vue';
     export default {
     name: "AppMain",
     data() {
@@ -93,7 +97,7 @@ import AppSingleCard from './AppSingleCard.vue';
             serviceSection
         };
     },
-    components: { AppSingleCard, AppDoctorCard }
+    components: { AppSingleCard, AppDoctorCard, AppSlider }
 }
 </script>
 
@@ -140,6 +144,10 @@ import AppSingleCard from './AppSingleCard.vue';
 
     .play{
         cursor: pointer;
+
+        &:hover{
+            scale: 1.1;
+        }
     }
 
     .sash{

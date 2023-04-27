@@ -31,19 +31,19 @@ const introSection = [
 
 const doctorSection = [
     {
-        image:'src/images/doctor-1-200x206.jpg',
+        image:'src/images/doctor-1.jpg',
         name:'jon snow',
         job:'Anesthesiologist',
         paragraph:'At vero eos accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque',
     },
     {
-        image:'src/images/doctor-2-200x206.jpg',
+        image:'src/images/doctor-2.jpg',
         name:'tony stark',
         job:'Cardiologist',
         paragraph:'At vero eos accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque',
     },
     {
-        image:'src/images/doctor-3-200x206.jpg',
+        image:'src/images/doctor-3.jpg',
         name:'anna smith',
         job:'Nurse Practitioner',
         paragraph:'At vero eos accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque',

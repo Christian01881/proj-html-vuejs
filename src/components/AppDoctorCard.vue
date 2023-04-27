@@ -31,6 +31,11 @@
     .doctor-card{
         width: calc(100% / 5);
 
+        &:hover{
+            scale: 1.1;
+            box-shadow: 10px 10px 5px grey;
+        }
+
         img{
             width: 100%;
         }
