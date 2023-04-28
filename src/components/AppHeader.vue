@@ -4,11 +4,17 @@
             <div>
                 <img class="logo" src="../images/medical_logo_1x_light.png" alt="">
             </div>
-            <div>
+            <div class="drop">
                 <ul class="d-flex align-items-center justify-content-between text-white text-uppercase">
-                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index < 4" class="px-3">{{ link }}</li>
-                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index > 3" class="px-3"><a class="none" href="#appointment">{{ link }}</a></li>
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index < 2" class="px-3 lightblue">{{ link }}</li> 
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index === 2" class="px-3 lightblue">{{ link }}</li>
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index > 2" class="px-3 lightblue"><a class="none" href="#appointment">{{ link }}</a></li>
                 </ul>
+                <div class="down">
+                    <ul class="list-group">
+                        <li class="list-group-item list-g" v-for="link in footerLinks">{{ link }}</li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="container text-white">
@@ -22,14 +28,16 @@
 </template>
 
 <script>
-import { headerLinks } from '../data/store.js' 
+import { headerLinks } from '../data/store.js';
+import { footerLinks} from '../data/store.js'
     export default {
         name: 'AppHeader',
         data(){
         return {
-                headerLinks
+                headerLinks,
+                footerLinks
         }
-    }
+    },
 }
 </script>
 
@@ -54,11 +62,20 @@ import { headerLinks } from '../data/store.js'
             list-style: none;
         }
 
+        .lightblue:hover{
+            color: #3aafbf;
+        }
+        
+
         li:last-child{
             background-color:#3aafbf;
             padding: 10px 12px;
             border-radius: 2px;
             cursor: pointer;
+
+            &:hover{
+                background-color: #327ec7;
+            }
         }
 
         .container{
@@ -93,6 +110,10 @@ import { headerLinks } from '../data/store.js'
         margin-top: 20px;
         border-radius: 4px;
 
+        &:hover{
+            background-color: #327ec7;
+        }
+
         a{
             text-decoration: none;
             color: white;
@@ -103,4 +124,32 @@ import { headerLinks } from '../data/store.js'
         text-decoration: none;
         color: white;
     }
+
+    .down{
+        width: 200px;
+        height: 230px;
+        color: black;
+        background-color: white;
+        position: absolute;
+        right: 385px;
+        top: 60px;
+        display: none;
+    }
+
+    .drop:hover .down{
+        display: block !important;
+    }
+
+    .list-g{
+        background-color: white !important;
+        color: black !important;
+
+        &:hover{
+            background-color: lightgrey !important;
+            color: white !important;
+        }
+    }
+
+    
+    
 </style>

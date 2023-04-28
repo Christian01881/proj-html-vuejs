@@ -178,6 +178,11 @@ import AppSlider from './AppSlider.vue';
             border: 3px solid white;
             color: white;
             padding: 6px 20px;
+
+            &:hover{
+                background-color: white;
+                color: #327ec7;
+            }
         }
     }
 
@@ -216,5 +221,9 @@ import AppSlider from './AppSlider.vue';
         background-color:#3aafbf;
         margin-top: 20px;
         border: none;
+
+        &:hover{
+            background-color: #327ec7;
+        }
     }
 </style>

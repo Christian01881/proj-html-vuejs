@@ -28,14 +28,25 @@
             <p class="mt-4 grey"><i class="fa-solid fa-phone-flip pe-3 size"></i> 1.800.458.556</p>
         </div>
         <div class="footer-2">
-
+            <h5 class="text-uppercase">Medical departments</h5>
+            <hr class="blue-rule">
+            <ul>
+                <li v-for="link in footerLinks" class="d-flex pt-2"><span class="chevron d-flex justify-content-center align-items-center me-4"><i class="fa-solid fa-chevron-right"></i></span>{{ link }}</li>
+            </ul>
+            <button class="text-uppercase btn-1">view our departments</button>
         </div>
     </div>
 </template>
 
 <script>
+import { footerLinks } from '../data/store';
     export default {
-        name: 'AppFooter'
+        name: 'AppFooter',
+        data(){
+            return{
+                footerLinks,
+            }
+        }
     }
 </script>
 
@@ -133,5 +144,28 @@
 
     .grey{
         color: grey;
+    }
+
+    .chevron{
+        background-color: #3aafbf;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    .btn-1{
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 20px;
+        margin-top: 40px;
     }
 </style>

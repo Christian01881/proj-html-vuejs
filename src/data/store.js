@@ -80,8 +80,15 @@ const serviceSection = [
         image:'src/images/icon-13.png',
         subtitle:'medical counseling',
         paragraph:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium volptatum deleniti atque corrupti quos dolores et quas',
-    },
-    
+    },   
+];
+
+const footerLinks = [
+    'Cardiology',
+    'Pediactrics',
+    'Diabetes Care',
+    'Pre-natel Care',
+    'Ultrasound Echocardiogram'
 ]
 
-export { headerLinks, introSection, doctorSection, serviceSection }
+export { headerLinks, introSection, doctorSection, serviceSection, footerLinks }
