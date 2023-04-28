@@ -145,7 +145,7 @@ import { footerLinks} from '../data/store.js'
         color: black !important;
 
         &:hover{
-            background-color: lightgrey !important;
+            background-color: grey !important;
             color: white !important;
         }
     }
