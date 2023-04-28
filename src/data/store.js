@@ -1,8 +1,8 @@
 const headerLinks = [
     'home',
     'about',
-    'departments',
     'articles',
+    'departments',
     'make appointment'
 ];
 

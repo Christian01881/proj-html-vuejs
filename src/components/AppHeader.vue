@@ -6,9 +6,9 @@
             </div>
             <div class="drop">
                 <ul class="d-flex align-items-center justify-content-between text-white text-uppercase">
-                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index < 2" class="px-3 lightblue">{{ link }}</li> 
-                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index === 2" class="px-3 lightblue">{{ link }}</li>
-                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index > 2" class="px-3 lightblue"><a class="none" href="#appointment">{{ link }}</a></li>
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index < 3" class="px-3 lightblue">{{ link }}</li> 
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index === 3" class="px-3 lightblue drop">{{ link }}</li>
+                    <li v-for="(link,index) in headerLinks" :key="index" v-show="index > 3" class="px-3 lightblue"><a class="none" href="#appointment">{{ link }}</a></li>
                 </ul>
                 <div class="down">
                     <ul class="list-group">
@@ -64,6 +64,7 @@ import { footerLinks} from '../data/store.js'
 
         .lightblue:hover{
             color: #3aafbf;
+            cursor: pointer;
         }
         
 
@@ -131,7 +132,7 @@ import { footerLinks} from '../data/store.js'
         color: black;
         background-color: white;
         position: absolute;
-        right: 385px;
+        right: 280px;
         top: 60px;
         display: none;
     }
