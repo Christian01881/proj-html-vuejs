@@ -35,6 +35,9 @@
             </ul>
             <button class="text-uppercase btn-1">view our departments</button>
         </div>
+        <div class="back-up d-flex align-items-center justify-content-center fs-4">
+            <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
     </div>
 </template>
 
@@ -55,6 +58,7 @@ import { footerLinks } from '../data/store';
     #footer{
         width: 100%;
         height: 80vh;
+        position: relative;
 
         img{
             width: 300px;
@@ -167,5 +171,26 @@ import { footerLinks } from '../data/store';
         border: 1px solid black;
         padding: 10px 20px;
         margin-top: 40px;
+    }
+
+    .back-up{
+        width: 70px;
+        height: 50px;
+        position: absolute;
+        bottom: 1px;
+        right: 100px;
+        color: white;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        border-top-left-radius: 5px ;
+        border-top-right-radius: 5px;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 </style>
