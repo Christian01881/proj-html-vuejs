@@ -49,13 +49,13 @@
                     <button class="text-uppercase">Learn more</button>
                 </div>
                 <div class="sash-2 d-flex flex-column align-items-center justify-content-center">
-                    <h4>Emergency Care</h4>
+                    <h4>Expert diagnostics</h4>
                     <img class="pt-3" src="../images/wave-divider.png" alt="">
                     <p class="p-3">Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
                     <button class="text-uppercase">Learn more</button>
                 </div>
                 <div class="sash-3 d-flex flex-column align-items-center justify-content-center">
-                    <h4>Emergency Care</h4>
+                    <h4>Super rehabilitation</h4>
                     <img class="pt-3" src="../images/wave-divider.png" alt="">
                     <p class="p-3">Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
                     <button class="text-uppercase">Learn more</button>
