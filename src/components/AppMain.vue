@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="d-flex flex-column align-items-center text-center">
                     <img class="py-5 mt-5 icon" src="../images/icon-6.png" alt="">
-                    <h1 class="text-uppercase pb-3">Meet our doctor</h1>
+                    <h1 class="text-uppercase pb-3">Our health service</h1>
                     <hr class="rule">
                     <p class="paragraph pt-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium aoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
                 </div>

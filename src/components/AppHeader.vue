@@ -10,8 +10,8 @@
                     <li v-for="(link,index) in headerLinks" :key="index" v-show="index === 3" class="px-3 lightblue drop">{{ link }}</li>
                     <li v-for="(link,index) in headerLinks" :key="index" v-show="index > 3" class="px-3 lightblue"><a class="none" href="#appointment">{{ link }}</a></li>
                 </ul>
-                <div class="down">
-                    <ul class="list-group">
+                <div class="">
+                    <ul class="list-group down">
                         <li class="list-group-item list-g" v-for="link in footerLinks">{{ link }}</li>
                     </ul>
                 </div>
